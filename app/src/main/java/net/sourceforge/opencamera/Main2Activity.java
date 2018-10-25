@@ -4,6 +4,7 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.app.Activity;
+import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.View;
 import android.content.Intent;
@@ -37,6 +38,20 @@ public class Main2Activity extends Activity {
             Bitmap bitmap1 = BitmapFactory.decodeByteArray(arr.get(0), 0, arr.get(0).length);
             ImageView img1 = findViewById(R.id.img1);
             img1.setImageBitmap(bitmap1);
+            //img1.setRotation(90);
+
+            arr.add(ss.getByteArrayExtra("B2"));
+            Bitmap bitmap2 = BitmapFactory.decodeByteArray(arr.get(1), 0, arr.get(1).length);
+            ImageView img2 = findViewById(R.id.img2);
+            img2.setImageBitmap(bitmap2);
+            //img2.setRotation(90);
+
+            arr.add(ss.getByteArrayExtra("B3"));
+            Bitmap bitmap3 = BitmapFactory.decodeByteArray(arr.get(2), 0, arr.get(2).length);
+            ImageView img3 = findViewById(R.id.img3);
+            img3.setImageBitmap(bitmap3);
+            //img3.setRotation(90);
+
             //arr.add(ss.getByteArrayExtra("B2"));
             //arr.add(ss.getByteArrayExtra("B3"));
         }

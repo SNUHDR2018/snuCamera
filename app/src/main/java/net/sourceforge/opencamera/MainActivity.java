@@ -2338,9 +2338,9 @@ public class MainActivity extends Activity {
 
 				ss.putExtra("B1", B1);
 				//Log.d(TAG, "put B1");
-				//ss.putExtra("B2", B2);
+				ss.putExtra("B2", B2);
 				//Log.d(TAG, "put B2");
-				//ss.putExtra("B3", B3);
+				ss.putExtra("B3", B3);
 				//Log.d(TAG, "put B3");
 
 			}
